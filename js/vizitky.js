@@ -67,6 +67,7 @@ function makeTable(obvod) {
     }
     var mID = muNames[obvod]
     var sel = Object.keys(data).filter((e) => e.split('_')[0] === mID)
+    sel.sort((a, b) => parseInt(a.split('_')[1]) - parseInt(b.split('_')[1]))
     sel.forEach((per) => {
         out += '<li><div class="right"><h2><span class="cislo">'
             + per.split('_')[1]

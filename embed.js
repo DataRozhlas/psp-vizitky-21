@@ -28,6 +28,7 @@ $('.linked').html(out);}}
 function makeTable(obvod){$('.linked').html('');var out='<h1>Kraj '+obvod+'</h1><ul>';if(!Object.keys(muNames).includes(obvod)){out+='Vizitky se připravují.'}
 var mID=muNames[obvod]
 var sel=Object.keys(data).filter((e)=>e.split('_')[0]===mID)
+sel.sort((a,b)=>parseInt(a.split('_')[1])-parseInt(b.split('_')[1]))
 sel.forEach((per)=>{out+='<li><div class="right"><h2><span class="cislo">'
 +per.split('_')[1]
 +'</span><span>'
