@@ -54,7 +54,7 @@ for kraj in lidi.VOLKRAJ.unique():
         # strana nema v kraji zastoupeni
         if len(f) == len(af) == 0:
             partaj = strany[strana]
-            pozn = 'Strana možnost natočit vyzitku nevyužila.'
+            pozn = 'Strana možnost natočit vizitku nevyužila.'
 
         # strana ma zastoupeni, bez fotky
         if (len(f) == 0) & (len(af) != 0):
