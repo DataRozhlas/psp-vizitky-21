@@ -41,7 +41,9 @@ audios = os.listdir('../media/audio/')
 # %%
 data = {}
 for kraj in lidi.VOLKRAJ.unique():
-    for strana in lidi.KSTRANA.unique():
+    # brat jenom postaveny kandidatky
+    lidi[lidi.VOLKRAJ == kraj].KSTRANA.unique()
+    for strana in lidi[lidi.VOLKRAJ == kraj].KSTRANA.unique():
         puid = str(kraj) + '_' + str(strana) + '_'
         f = list(filter(lambda x: x.startswith(puid), photos))
         af = list(filter(lambda x: x.startswith(puid), audios))
