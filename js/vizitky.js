@@ -79,10 +79,10 @@ function makeTable(obvod) {
             + data[per].povolani
             + (data[per].pozn != null ? '<div><span class="supplemental">' + data[per].pozn + '</span></div>' : '')
             + '</span>'
-            //+ '<span class="share">Sdílet na <a href="javascript:share(\'https://www.facebook.com/sharer/sharer.php?u=' + location.href.split('?')[0] + '?' + per + '\');'
-            //+ '">Facebook</a> | <a href="javascript:share(\'https://twitter.com/home?status='
-            //+ location.href.split('?')[0] + '?' + per + '\');">Twitter</a> | <a target="_blank" href="https://www.irozhlas.cz/volby/senatni-volby-2020/kandidati-vizitky/embed-vizitky-senatoru#'
-            //+ per + '">Embed</a></span>'
+            + '<span class="share">Sdílet na <a href="javascript:share(\'https://www.facebook.com/sharer/sharer.php?u=' + location.href.split('?')[0] + '?' + per + '\');'
+            + '">Facebook</a> | <a href="javascript:share(\'https://twitter.com/home?status='
+            + location.href.split('?')[0] + '?' + per + '\');">Twitter</a> | <a target="_blank" href="https://www.irozhlas.cz/volby/parlamentni-volby-2021/kandidati-vizitky/embed#'
+            + per + '">Embed</a></span>'
             + (data[per].afile != '' ? '<div><audio class="player" src="' + host + 'media/audio/' + data[per].afile + '" preload="none" controls="yes"></audio></div>' : '')
             + '</div><div class="left"><img width="120" height="180" alt="'
             + data[per].jmeno
