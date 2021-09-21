@@ -21,7 +21,7 @@ for kd in d.values():
     if kd['jmeno'] == '&nbsp;':
         continue
     uid = '_'.join(kd['file'].split('.')[0].split('_')[:2])
-    out += '<h2 id="{0}">{1} ({2}), strana č. {3}, kraj {4}</h2>Kód pro vložení do stránky:<br> <textarea style="width: 100%; min-height: 20px" disabled><iframe name="kandidat-kraj" src="https://www.irozhlas.cz/volby/parlamentni-volby-2021/kandidati-vizitky/embed?{5}" width="100%" height="239"></iframe></textarea>'.format(
+    out += '<h3 id="{0}">{1} ({2}), strana č. {3}, kraj {4}</h3><p class="text-sm  text-sans-serif">Kód pro vložení do stránky:</p><textarea class="img text-sans-serif text-xs mb--20" disabled><iframe name="kandidat-kraj" src="https://www.irozhlas.cz/volby/parlamentni-volby-2021/kandidati-vizitky/embed?{5}" width="100%" height="239"></iframe></textarea>'.format(
         uid,
         kd['jmeno'],
         kd['partaj'],
@@ -35,9 +35,4 @@ for kd in d.values():
 with open('./iframes.html', 'w', encoding='utf-8') as f:
     f.write(out)
 
-
-# %%
-uid
-# %%
-out
 # %%
