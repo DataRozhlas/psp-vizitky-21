@@ -10,21 +10,21 @@ function share(url) {
 };
 
 var muNames = {
-    //'Praha': '1',
-    //'Středočeský': '2',
+    'Praha': '1',
+    'Středočeský': '2',
     'Jihočeský': '3',
     'Plzeňský': '4',
     'Karlovarský': '5',
     'Ústecký': '6',
     'Liberecký': '7',
-    //'Královéhradecký': '8',
-    //'Pardubický': '9',
+    'Královéhradecký': '8',
+    'Pardubický': '9',
     'Vysočina': '10',
-    //'Jihomoravský': '11',
+    'Jihomoravský': '11',
     'Olomoucký': '12',
-    //'Zlínský': '13',
+    'Zlínský': '13',
     'Moravskoslezský': '14',
-}
+};
 
 //social sharing
 function makeSelect() {
