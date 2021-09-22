@@ -36,7 +36,7 @@ function makeSelect() {
             return;
         }
 
-        var out = '<h1>Kraj ' + Object.keys(muNames)[parseInt(id.split('_')[0])] + '</h1><ul>';
+        var out = '<h1>Kraj ' + Object.keys(muNames)[parseInt(id.split('_')[0]) - 1] + '</h1><ul>';
         out += '<li><div class="right"><h2><span class="cislo">'
             + id.split('_')[1]
             + '</span> <span>'

@@ -74,7 +74,7 @@ var links=document.getElementsByTagName('a');for(var i=0,linksLength=links.lengt
 var host;if(location.href.split('?')[0].indexOf('irozhlas')==-1){host=location.href.split('?')[0];}else{host='https://data.irozhlas.cz/psp-vizitky-21/';}
 function share(url){window.open(url,'Sdílení','width=550,height=450,scrollbars=no');};var muNames={'Praha':'1','Středočeský':'2','Jihočeský':'3','Plzeňský':'4','Karlovarský':'5','Ústecký':'6','Liberecký':'7','Královéhradecký':'8','Pardubický':'9','Vysočina':'10','Jihomoravský':'11','Olomoucký':'12','Zlínský':'13','Moravskoslezský':'14',};function makeSelect(){var id=location.href.split('?')[1];if(id!=null){var filtered=data[id]
 if(!filtered){return;}
-var out='<h1>Kraj '+Object.keys(muNames)[parseInt(id.split('_')[0])]+'</h1><ul>';out+='<li><div class="right"><h2><span class="cislo">'
+var out='<h1>Kraj '+Object.keys(muNames)[parseInt(id.split('_')[0])-1]+'</h1><ul>';out+='<li><div class="right"><h2><span class="cislo">'
 +id.split('_')[1]
 +'</span> <span>'
 +filtered.jmeno
