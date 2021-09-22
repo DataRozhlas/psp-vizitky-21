@@ -163,6 +163,12 @@ mapka = Highcharts.mapChart('container', {
                     makeTable(e.target.point.properties.NAZ_CZNUTS3)
                     $('#select select').val(e.target.point.properties.NAZ_CZNUTS3).change();
                 }
+            },
+            touchstart: function (e) {
+                if ('point' in e.target) {
+                    makeTable(e.target.point.properties.NAZ_CZNUTS3)
+                    $('#select select').val(e.target.point.properties.NAZ_CZNUTS3).change();
+                }
             }
         }
     }]

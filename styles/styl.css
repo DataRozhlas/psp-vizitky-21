@@ -1,7 +1,5 @@
 #container {
-    min-height: 200px;
-    height: 60vh;
-    min-width: 200px; 
+    height: 60vw;
     width: 100%; 
     margin: 0 auto; 
 }
