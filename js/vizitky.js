@@ -120,6 +120,7 @@ mapka = Highcharts.mapChart('container', {
     title: {
         text: ''
     },
+    styledMode: true,
     subtitle: {
         align: 'center',
         useHTML: true,
