@@ -30,8 +30,13 @@ var muNames = {
 function makeSelect() {
     var id = location.href.split('?')[1];
     if (id != null) {
-        var filtered = data[id]
+        if (!id.includes('_')) {
+            console.log(id)
+            makeTable(Object.keys(muNames)[parseInt(id) - 1]);
+            return
+        }
 
+        var filtered = data[id]
         if (!filtered) {
             return;
         }
