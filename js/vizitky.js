@@ -28,7 +28,7 @@ var muNames = {
 
 //social sharing
 function makeSelect() {
-    var id = location.href.split('?')[1];
+    var id = location.href.split('?')[1].split('&')[0];
     if (id != null) {
         if (!id.includes('_')) {
             console.log(id)
