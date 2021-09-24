@@ -31,7 +31,6 @@ function makeSelect() {
     var id = location.href.split('?')[1].split('&')[0];
     if (id != null) {
         if (!id.includes('_')) {
-            console.log(id)
             makeTable(Object.keys(muNames)[parseInt(id) - 1]);
             return
         }
